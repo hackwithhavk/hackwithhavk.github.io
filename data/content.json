@@ -1,0 +1,126 @@
+{
+  "site": {
+    "name": "HAVK",
+    "school": "UNC Charlotte",
+    "eyebrow": "Student-led technology community",
+    "tagline": "UNC Charlotte",
+    "description": "Student-run and open to anyone at UNC Charlotte.",
+    "discordUrl": "https://discord.gg/rPMw3u7mkj",
+    "instagramUrl": "",
+    "linkedinUrl": ""
+  },
+  "stats": [
+    { "value": "2×", "label": "Intern for a Day visits each semester" },
+    { "value": "Biweekly", "label": "Competitions, workshops, and practice" },
+    { "value": "0", "label": "Experience required to join" }
+  ],
+  "programs": [
+    {
+      "number": "01",
+      "kicker": "Make it real",
+      "title": "Biweekly competitions",
+      "body": "Short, friendly prompts that turn a blank page into a finished idea—and give you something to talk about in an interview.",
+      "tag": "Build + share"
+    },
+    {
+      "number": "02",
+      "kicker": "Get hands-on",
+      "title": "Hardware & software workshops",
+      "body": "Beginner-friendly sessions for breaking down systems, testing tools, and learning the why behind the tech.",
+      "tag": "Learn by doing"
+    },
+    {
+      "number": "03",
+      "kicker": "Communicate clearly",
+      "title": "AWS technical writing",
+      "body": "Practice the skill that makes technical work useful: explaining systems, decisions, and results so someone else can build on them.",
+      "tag": "Write + ship"
+    },
+    {
+      "number": "04",
+      "kicker": "Find your edge",
+      "title": "Career labs",
+      "body": "Job interview practice, leadership roles, and industry conversations that make the path from classroom to career feel less mysterious.",
+      "tag": "Prepare + connect"
+    }
+  ],
+  "events": [
+    {
+      "image": "assets/posters/first-poster.jpg",
+      "title": "HAVK open community",
+      "type": "Community kickoff",
+      "description": "Competitions, workshops, leadership roles, interview practice, and a Discord full of people learning in public.",
+      "meta": "Open to anyone"
+    },
+    {
+      "image": "assets/posters/ai-data.jpg",
+      "title": "AI & Data Competition",
+      "type": "Competition archive",
+      "description": "A short-form hackathon for turning data into answers—and building something you can put on your resume.",
+      "meta": "Past highlight"
+    },
+    {
+      "image": "assets/posters/ibm-enterprise.jpg",
+      "title": "Enterprise Computing with IBM",
+      "type": "Industry conversation",
+      "description": "A career talk about enterprise systems, cloud, cybersecurity, data centers, and how big companies actually run.",
+      "meta": "Past highlight"
+    },
+    {
+      "image": "assets/posters/reverse-engineering.jpg",
+      "title": "Reverse Engineering",
+      "type": "Technical workshop",
+      "description": "Work backwards, think forwards, and uncover how programs really work. Beginner-friendly by design.",
+      "meta": "Past highlight"
+    },
+    {
+      "image": "assets/posters/internship-apocalypse.jpg",
+      "title": "Internship Apocalypse",
+      "type": "Career lab",
+      "description": "A chaotic, useful reaction to terrible job postings, weird recruiter behavior, rejection stories, and better strategy.",
+      "meta": "Past highlight"
+    }
+  ],
+  "team": [
+    {
+      "name": "Summer Malik",
+      "role": "President",
+      "initials": "SM",
+      "bio": "Building HAVK's programs, partnerships, and student community.",
+      "groups": []
+    },
+    {
+      "name": "Ema",
+      "role": "UI/UX Design & Marketing",
+      "initials": "E",
+      "bio": "Shaping HAVK's brand, web experience, and creative direction.",
+      "groups": []
+    }
+  ],
+  "gallery": [
+    {
+      "image": "assets/images/community-lobby.jpg",
+      "alt": "HAVK members gathered together in a bright campus lobby",
+      "label": "Community",
+      "caption": "Bring your questions. Find your people."
+    },
+    {
+      "image": "assets/images/workshop-talk.jpg",
+      "alt": "A HAVK member presenting to students in a workshop",
+      "label": "Workshop",
+      "caption": "Make the room a little more curious."
+    },
+    {
+      "image": "assets/images/win-moment.jpg",
+      "alt": "Two students celebrate with a certificate in front of a whiteboard",
+      "label": "Momentum",
+      "caption": "Small wins compound."
+    },
+    {
+      "image": "assets/images/field-pair.jpg",
+      "alt": "Two students standing together in a campus atrium",
+      "label": "Field notes",
+      "caption": "Take the work beyond the classroom."
+    }
+  ]
+}

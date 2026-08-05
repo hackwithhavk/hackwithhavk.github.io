@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 210" role="img" aria-label="">
+  <defs>
+    <pattern id="pink-dots" width="9" height="9" patternUnits="userSpaceOnUse">
+      <circle cx="2.2" cy="2.2" r="1.45" fill="#07100a"/>
+    </pattern>
+    <pattern id="cyan-dots" width="9" height="9" patternUnits="userSpaceOnUse">
+      <circle cx="2.2" cy="2.2" r="1.35" fill="#07100a"/>
+    </pattern>
+    <path id="pink-shards" d="M170 120 20 36l137 99ZM173 123 72 4l89 132ZM177 120 151 1l17 136ZM184 120 234 8l-58 132ZM187 124 344 39 178 143ZM181 128l116 72-127-57ZM169 130l-46 76 57-64Z"/>
+    <path id="cyan-shards" d="M169 119 7 84l153 52ZM174 121 45 14l117 124ZM177 120 117 0l52 138ZM181 119 194 0l-22 139ZM185 121 288 17l-111 124ZM188 126 357 87l-180 57ZM181 130l61 78-71-65ZM168 130 82 188l98-47Z"/>
+  </defs>
+
+  <g fill="none" stroke="#07100a" stroke-linecap="round" stroke-width="2.5" opacity=".9">
+    <path d="m3 112 107 12M28 26l104 91M105 1l42 108M214 2l-28 110M346 10 208 115M359 73l-151 54M344 190l-142-52M95 208l54-68"/>
+  </g>
+
+  <use href="#pink-shards" fill="#ff3f9e" stroke="#07100a" stroke-linejoin="round" stroke-width="3"/>
+  <use href="#pink-shards" fill="url(#pink-dots)"/>
+  <use href="#cyan-shards" fill="#31dce9" stroke="#07100a" stroke-linejoin="round" stroke-width="3"/>
+  <use href="#cyan-shards" fill="url(#cyan-dots)"/>
+
+  <path d="m89 131 53-14-18-27 38 19 14-34 17 31 42-27-21 38 55-1-47 22 42 25-55-10 16 41-39-31-18 39-7-43-52 24 34-39-54-2Z"
+        fill="#fff8cc" stroke="#07100a" stroke-linejoin="round" stroke-width="3.5"/>
+  <path d="m119 138 30-10-11-17 24 10 10-22 9 21 27-17-14 23 35-1-29 14 27 16-35-7 8 27-25-20-11 25-4-27-33 15 21-25-35-1Z"
+        fill="#fff25a"/>
+</svg>
