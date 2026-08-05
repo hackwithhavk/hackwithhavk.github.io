@@ -14,36 +14,6 @@
     { "value": "Biweekly", "label": "Competitions, workshops, and practice" },
     { "value": "0", "label": "Experience required to join" }
   ],
-  "programs": [
-    {
-      "number": "01",
-      "kicker": "Make it real",
-      "title": "Biweekly competitions",
-      "body": "Short, friendly prompts that turn a blank page into a finished idea—and give you something to talk about in an interview.",
-      "tag": "Build + share"
-    },
-    {
-      "number": "02",
-      "kicker": "Get hands-on",
-      "title": "Hardware & software workshops",
-      "body": "Beginner-friendly sessions for breaking down systems, testing tools, and learning the why behind the tech.",
-      "tag": "Learn by doing"
-    },
-    {
-      "number": "03",
-      "kicker": "Communicate clearly",
-      "title": "AWS technical writing",
-      "body": "Practice the skill that makes technical work useful: explaining systems, decisions, and results so someone else can build on them.",
-      "tag": "Write + ship"
-    },
-    {
-      "number": "04",
-      "kicker": "Find your edge",
-      "title": "Career labs",
-      "body": "Job interview practice, leadership roles, and industry conversations that make the path from classroom to career feel less mysterious.",
-      "tag": "Prepare + connect"
-    }
-  ],
   "events": [
     {
       "image": "assets/posters/first-poster.jpg",

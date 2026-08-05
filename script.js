@@ -8,7 +8,6 @@ const fallbackContent = {
     discordUrl: "https://discord.gg/rPMw3u7mkj"
   },
   stats: [],
-  programs: [],
   events: [],
   team: [],
   gallery: []
@@ -35,27 +34,6 @@ function renderStats(stats = []) {
       <strong>${escapeHTML(stat.value)}</strong>
       <span>${escapeHTML(stat.label)}</span>
     </div>
-  `).join("");
-}
-
-function renderPrograms(programs = []) {
-  const container = $("#program-list");
-  if (!container) return;
-  const images = [
-    { src: "assets/posters/first-poster.jpg", alt: "Original HAVK community poster" },
-    { src: "assets/images/workshop-talk.jpg", alt: "A HAVK workshop in progress" },
-    { src: "assets/posters/ibm-enterprise.jpg", alt: "HAVK enterprise computing event poster" }
-  ];
-  container.innerHTML = programs.slice(0, 3).map((program, index) => `
-    <article class="program reveal">
-      <span class="program__number">${escapeHTML(program.number)}</span>
-      <div class="program__content">
-        <h3>${escapeHTML(program.title)}</h3>
-      </div>
-      <figure class="program__image">
-        <img src="${images[index].src}" alt="${images[index].alt}" loading="lazy" />
-      </figure>
-    </article>
   `).join("");
 }
 
@@ -171,7 +149,6 @@ async function init() {
   document.title = `${site.name || "HAVK"} — ${site.tagline || "Learn by doing"}`;
   $("#about-description").textContent = site.description || fallbackContent.site.description;
   renderStats(content.stats);
-  renderPrograms(content.programs);
   renderEvents(content.events);
   renderTeam(content.team);
   setDiscordUrl(site.discordUrl);
