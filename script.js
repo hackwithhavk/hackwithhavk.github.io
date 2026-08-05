@@ -4,7 +4,7 @@ const fallbackContent = {
     school: "UNC Charlotte",
     eyebrow: "Student-led technology community",
     tagline: "Learn by doing. Leave with a next step.",
-    description: "HAVK is a student-run technology community at UNC Charlotte for curious people who want to build practical skills, find their people, and get closer to the work.",
+    description: "HAVK is a student organization in UNC Charlotte’s College of Computing and Informatics. We focus on helping students build real confidence, professional skills, leadership, and community through opportunities that feel practical, engaging, and actually useful.",
     discordUrl: "https://discord.gg/rPMw3u7mkj"
   },
   stats: [],
