@@ -1,6 +1,6 @@
 # HAVK website
 
-The first HAVK site is a dependency-free static site made for GitHub Pages. It uses the curated assets from the shared `havk assets` folder and keeps repeatable content in [data/content.json](data/content.json).
+Hi! The first HAVK site is a dependency-free static site made for GitHub Pages. It uses the curated assets from the shared `havk assets` folder and keeps repeatable content in [data/content.json](data/content.json).
 
 ## Run it locally
 
