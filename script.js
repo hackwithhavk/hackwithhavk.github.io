@@ -42,8 +42,19 @@ function renderStats(stats = []) {
 function renderPrograms(programs = []) {
   const container = $("#program-list");
   if (!container) return;
-  container.innerHTML = programs.map((program) => `
-    <article class="program-row reveal">
+  container.innerHTML = programs.map((program) => {
+    const images = Array.isArray(program.images) ? program.images : [];
+    const photoMarkup = images.length ? `
+      <div class="program-row__photos">
+        ${images.map((image) => `
+          <figure>
+            <img src="${escapeHTML(image.src)}" alt="${escapeHTML(image.alt)}" loading="lazy" />
+          </figure>
+        `).join("")}
+      </div>
+    ` : "";
+    return `
+    <article class="program-row${images.length ? " program-row--with-photos" : ""} reveal">
       <div class="program-row__logo">
         <img src="${escapeHTML(program.logo)}" alt="${escapeHTML(program.partner)}" loading="lazy" />
       </div>
@@ -51,9 +62,14 @@ function renderPrograms(programs = []) {
         <span>${escapeHTML(program.partner)}</span>
         <h3>${escapeHTML(program.title)}</h3>
       </div>
-      <p>${escapeHTML(program.description)}</p>
+      <div class="program-row__copy">
+        <p>${escapeHTML(program.description)}</p>
+        ${program.details ? `<p>${escapeHTML(program.details)}</p>` : ""}
+      </div>
+      ${photoMarkup}
     </article>
-  `).join("");
+  `;
+  }).join("");
 }
 
 function renderCollaborators(collaborators = []) {
@@ -164,10 +180,11 @@ function setDiscordUrl(url = "") {
 
 async function loadContent() {
   try {
+    const eventsSource = document.body.dataset.eventsSource || "data/events.json";
     const [contentResponse, programsResponse, eventsResponse] = await Promise.all([
       fetch("data/content.json", { cache: "no-store" }),
       fetch("data/programs.json", { cache: "no-store" }),
-      fetch("data/events.json", { cache: "no-store" })
+      fetch(eventsSource, { cache: "no-store" })
     ]);
     if (!contentResponse.ok || !programsResponse.ok || !eventsResponse.ok) {
       throw new Error("One or more HAVK content files could not be loaded.");
@@ -197,7 +214,7 @@ async function init() {
   const content = await loadContent();
   const site = content.site || fallbackContent.site;
   document.title = document.body.classList.contains("event-archive-page")
-    ? `Spring 2026 Archive — ${site.name || "HAVK"}`
+    ? `${document.body.dataset.semester || "Event"} Archive — ${site.name || "HAVK"}`
     : `${site.name || "HAVK"} — ${site.tagline || "Learn by doing"}`;
   const aboutDescription = $("#about-description");
   if (aboutDescription) aboutDescription.textContent = site.description || fallbackContent.site.description;

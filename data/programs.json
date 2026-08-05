@@ -22,13 +22,25 @@
       "title": "Intern for a Day",
       "partner": "TIAA",
       "logo": "assets/logos/tiaa.svg",
-      "description": "Visit companies, talk to people who work there, and see what the day-to-day actually looks like. Spring 2026 began with a four-hour visit to TIAA."
+      "description": "Intern for a Day takes HAVK members off campus and inside a company to see the work, the people, and the paths into the industry up close.",
+      "details": "The Spring 2026 visit to TIAA ran from 9:30 AM–1:30 PM with transportation provided. Students met employees, explored teams and career paths, and completed a professional-readiness workshop before the visit.",
+      "images": [
+        {
+          "src": "assets/images/community-lobby.jpg",
+          "alt": "HAVK students together during their Intern for a Day visit to TIAA"
+        },
+        {
+          "src": "assets/images/field-pair.jpg",
+          "alt": "Two HAVK members during the TIAA company visit"
+        }
+      ]
     },
     {
       "title": "Algorithmic Markets",
       "partner": "Principal Financial",
       "logo": "assets/logos/principal-financial.svg",
-      "description": "A Principal Financial-funded project on quantitative finance, predictive modeling, edge AI, analytics, and data-driven decision systems."
+      "description": "A Principal Financial-funded, semester-long technical project that gives HAVK students room to work on a difficult problem together instead of stopping at a one-night workshop.",
+      "details": "Students explore quantitative finance, predictive modeling, edge AI, real-time analytics, and how algorithmic markets make decisions as conditions change. Workshops feed into a collaborative technical build, research, and a final presentation of what the team learned."
     },
     {
       "title": "AWS Technical Writing",

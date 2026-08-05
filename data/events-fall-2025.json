@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Tech Gone Wild",
+    "date": "OCT 20",
+    "type": "Creative tech night",
+    "description": "Members explored unusual tech ideas, pitched the worst startup they could imagine, and left with possible project ideas of their own.",
+    "location": "Woodward 335 · 5:30 PM",
+    "image": "assets/images/event-presentation.jpg",
+    "imageAlt": "A HAVK member presenting a project to the room"
+  },
+  {
+    "title": "AI & Data Visualization Sprint",
+    "date": "NOV 03",
+    "type": "Data competition",
+    "description": "Teams used real datasets from NASA, Spotify, Netflix, and Charlotte crime data to find insights and build visualizations in Google Colab.",
+    "location": "Woodward 335 · 5:30 PM",
+    "image": "assets/posters/ai-data.jpg",
+    "imageAlt": "HAVK AI and Data Competition poster"
+  },
+  {
+    "title": "Show & Tell",
+    "date": "NOV 17",
+    "type": "Member showcase",
+    "description": "Students shared personal projects—finished or unfinished—through live demos, quick presentations, and conversations about their tech stacks.",
+    "location": "Woodward 335 · 5:30 PM",
+    "image": "assets/images/workshop-talk.jpg",
+    "imageAlt": "A HAVK member sharing a project during a meeting"
+  },
+  {
+    "title": "Web Development Competition",
+    "date": "NOV 24",
+    "type": "Three-hour build sprint",
+    "description": "Teams of one or two received a surprise topic, built a working website with any frontend tools they wanted, and presented it before the night ended.",
+    "location": "Woodward 335 · 5:30 PM",
+    "image": "assets/images/event-winners.jpg",
+    "imageAlt": "HAVK competition participants holding their certificates"
+  }
+]
