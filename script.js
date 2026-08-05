@@ -8,6 +8,8 @@ const fallbackContent = {
     discordUrl: "https://discord.gg/rPMw3u7mkj"
   },
   stats: [],
+  collaborators: [],
+  programs: [],
   events: [],
   team: [],
   gallery: []
@@ -37,16 +39,47 @@ function renderStats(stats = []) {
   `).join("");
 }
 
+function renderPrograms(programs = []) {
+  const container = $("#program-list");
+  if (!container) return;
+  container.innerHTML = programs.map((program) => `
+    <article class="program-row reveal">
+      <div class="program-row__logo">
+        <img src="${escapeHTML(program.logo)}" alt="${escapeHTML(program.partner)}" loading="lazy" />
+      </div>
+      <div class="program-row__title">
+        <span>${escapeHTML(program.partner)}</span>
+        <h3>${escapeHTML(program.title)}</h3>
+      </div>
+      <p>${escapeHTML(program.description)}</p>
+    </article>
+  `).join("");
+}
+
+function renderCollaborators(collaborators = []) {
+  const container = $("#collaborator-list");
+  if (!container) return;
+  container.innerHTML = collaborators.map((collaborator) => `
+    <div class="collaborator-logo">
+      <img src="${escapeHTML(collaborator.logo)}" alt="${escapeHTML(collaborator.name)}" loading="lazy" />
+    </div>
+  `).join("");
+}
+
 function renderEvents(events = []) {
   const container = $("#event-list");
   if (!container) return;
-  container.innerHTML = events.slice(0, 3).map((event) => `
+  container.innerHTML = events.map((event) => `
     <article class="event-card reveal">
       <div class="event-card__image">
-        <img src="${escapeHTML(event.image)}" alt="${escapeHTML(event.title)} event poster" loading="lazy" />
+        <img src="${escapeHTML(event.image)}" alt="${escapeHTML(event.imageAlt || event.title)}" loading="lazy" />
+        <span class="event-card__date">${escapeHTML(event.date)}</span>
       </div>
       <div class="event-card__body">
+        <p class="event-card__type">${escapeHTML(event.type)}</p>
         <h3>${escapeHTML(event.title)}</h3>
+        <p class="event-card__description">${escapeHTML(event.description)}</p>
+        <span class="event-card__location">${escapeHTML(event.location)}</span>
       </div>
     </article>
   `).join("");
@@ -131,9 +164,25 @@ function setDiscordUrl(url = "") {
 
 async function loadContent() {
   try {
-    const response = await fetch("data/content.json", { cache: "no-store" });
-    if (!response.ok) throw new Error(`Content request failed: ${response.status}`);
-    return await response.json();
+    const [contentResponse, programsResponse, eventsResponse] = await Promise.all([
+      fetch("data/content.json", { cache: "no-store" }),
+      fetch("data/programs.json", { cache: "no-store" }),
+      fetch("data/events.json", { cache: "no-store" })
+    ]);
+    if (!contentResponse.ok || !programsResponse.ok || !eventsResponse.ok) {
+      throw new Error("One or more HAVK content files could not be loaded.");
+    }
+    const [content, programsData, events] = await Promise.all([
+      contentResponse.json(),
+      programsResponse.json(),
+      eventsResponse.json()
+    ]);
+    return {
+      ...content,
+      collaborators: programsData.collaborators || [],
+      programs: programsData.programs || [],
+      events
+    };
   } catch (error) {
     console.warn("HAVK content JSON could not be loaded; using fallback content.", error);
     return fallbackContent;
@@ -143,12 +192,18 @@ async function loadContent() {
 async function init() {
   wireNavigation();
   wireOfficerPeek();
-  $("#current-year").textContent = new Date().getFullYear();
+  const currentYear = $("#current-year");
+  if (currentYear) currentYear.textContent = new Date().getFullYear();
   const content = await loadContent();
   const site = content.site || fallbackContent.site;
-  document.title = `${site.name || "HAVK"} — ${site.tagline || "Learn by doing"}`;
-  $("#about-description").textContent = site.description || fallbackContent.site.description;
+  document.title = document.body.classList.contains("event-archive-page")
+    ? `Spring 2026 Archive — ${site.name || "HAVK"}`
+    : `${site.name || "HAVK"} — ${site.tagline || "Learn by doing"}`;
+  const aboutDescription = $("#about-description");
+  if (aboutDescription) aboutDescription.textContent = site.description || fallbackContent.site.description;
   renderStats(content.stats);
+  renderCollaborators(content.collaborators);
+  renderPrograms(content.programs);
   renderEvents(content.events);
   renderTeam(content.team);
   setDiscordUrl(site.discordUrl);

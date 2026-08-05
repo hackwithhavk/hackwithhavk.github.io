@@ -1,0 +1,40 @@
+{
+  "collaborators": [
+    {
+      "name": "IBM",
+      "logo": "assets/logos/ibm.svg"
+    },
+    {
+      "name": "TIAA",
+      "logo": "assets/logos/tiaa.svg"
+    },
+    {
+      "name": "Principal Financial",
+      "logo": "assets/logos/principal-financial.svg"
+    },
+    {
+      "name": "Amazon Web Services",
+      "logo": "assets/logos/aws.svg"
+    }
+  ],
+  "programs": [
+    {
+      "title": "Intern for a Day",
+      "partner": "TIAA",
+      "logo": "assets/logos/tiaa.svg",
+      "description": "Visit companies, talk to people who work there, and see what the day-to-day actually looks like. Spring 2026 began with a four-hour visit to TIAA."
+    },
+    {
+      "title": "Algorithmic Markets",
+      "partner": "Principal Financial",
+      "logo": "assets/logos/principal-financial.svg",
+      "description": "A Principal Financial-funded project on quantitative finance, predictive modeling, edge AI, analytics, and data-driven decision systems."
+    },
+    {
+      "title": "AWS Technical Writing",
+      "partner": "AWS Builders",
+      "logo": "assets/logos/aws.svg",
+      "description": "Turn a project, research idea, or something you just learned into a technical article you can actually publish and share."
+    }
+  ]
+}

@@ -14,43 +14,6 @@
     { "value": "Biweekly", "label": "Competitions, workshops, and practice" },
     { "value": "0", "label": "Experience required to join" }
   ],
-  "events": [
-    {
-      "image": "assets/posters/first-poster.jpg",
-      "title": "HAVK open community",
-      "type": "Community kickoff",
-      "description": "Competitions, workshops, leadership roles, interview practice, and a Discord full of people learning in public.",
-      "meta": "Open to anyone"
-    },
-    {
-      "image": "assets/posters/ai-data.jpg",
-      "title": "AI & Data Competition",
-      "type": "Competition archive",
-      "description": "A short-form hackathon for turning data into answers—and building something you can put on your resume.",
-      "meta": "Past highlight"
-    },
-    {
-      "image": "assets/posters/ibm-enterprise.jpg",
-      "title": "Enterprise Computing with IBM",
-      "type": "Industry conversation",
-      "description": "A career talk about enterprise systems, cloud, cybersecurity, data centers, and how big companies actually run.",
-      "meta": "Past highlight"
-    },
-    {
-      "image": "assets/posters/reverse-engineering.jpg",
-      "title": "Reverse Engineering",
-      "type": "Technical workshop",
-      "description": "Work backwards, think forwards, and uncover how programs really work. Beginner-friendly by design.",
-      "meta": "Past highlight"
-    },
-    {
-      "image": "assets/posters/internship-apocalypse.jpg",
-      "title": "Internship Apocalypse",
-      "type": "Career lab",
-      "description": "A chaotic, useful reaction to terrible job postings, weird recruiter behavior, rejection stories, and better strategy.",
-      "meta": "Past highlight"
-    }
-  ],
   "team": [
     {
       "name": "Summer Malik",

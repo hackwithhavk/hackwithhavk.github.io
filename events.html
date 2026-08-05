@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a0d0b" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta name="description" content="A visual archive of HAVK events from Spring 2026 at UNC Charlotte." />
+    <meta property="og:title" content="Spring 2026 Archive — HAVK" />
+    <meta property="og:description" content="HAVK events, competitions, company visits, workshops, and community moments from Spring 2026." />
+    <meta property="og:type" content="website" />
+    <title>Spring 2026 Archive — HAVK</title>
+    <link rel="icon" type="image/png" href="assets/images/havk-mark.png" />
+    <link rel="stylesheet" href="styles.css?v=20260805aw" />
+    <script defer src="script.js?v=20260805aw"></script>
+  </head>
+  <body class="event-archive-page">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="shell nav-wrap">
+        <a class="brand" href="index.html" aria-label="HAVK home">
+          <img class="brand__mark" src="assets/images/havk-mark.png" alt="" />
+          <span class="brand__wordmark">HAVK</span>
+          <span class="brand__school">UNC Charlotte</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="sr-only">Toggle menu</span>
+          <span></span><span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+          <a href="index.html#about"><span>About</span></a>
+          <a href="index.html#programs"><span>Programs</span></a>
+          <a href="events.html"><span>Events</span></a>
+          <a href="index.html#team"><span>Team</span></a>
+          <a class="nav-cta discord-link" href="https://discord.gg/rPMw3u7mkj" target="_blank" rel="noreferrer">Join HAVK <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="archive-hero section-dark">
+        <div class="archive-hero__burst" aria-hidden="true"></div>
+        <div class="shell archive-hero__inner">
+          <div>
+            <a class="archive-back" href="index.html#field-notes">← Back to HAVK</a>
+            <p class="archive-kicker">The semester that happened</p>
+            <h1>Spring <em>2026</em><br />Archive</h1>
+          </div>
+          <div class="archive-hero__note">
+            <strong>10</strong>
+            <span>events, visits, competitions, and workshops</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="archive-events section-paper" aria-labelledby="archive-heading">
+        <div class="shell">
+          <div class="archive-events__heading reveal">
+            <h2 id="archive-heading">What we did</h2>
+            <p>Not announcements. The actual semester.</p>
+          </div>
+          <div class="archive-event-grid" id="event-list" aria-live="polite"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer__top">
+        <a class="brand brand--footer" href="index.html" aria-label="HAVK home">
+          <img class="brand__mark" src="assets/images/havk-mark.png" alt="" />
+          <span class="brand__wordmark">HAVK</span>
+        </a>
+        <p>Student-led technology community<br />at UNC Charlotte.</p>
+        <div class="footer__links">
+          <a href="index.html#about">About</a><a href="index.html#programs">Programs</a><a class="discord-link" href="https://discord.gg/rPMw3u7mkj" target="_blank" rel="noreferrer">Join</a>
+        </div>
+      </div>
+      <div class="shell footer__bottom"><span>© <span id="current-year"></span> HAVK</span><a href="#top">Back to top ↑</a></div>
+    </footer>
+
+    <noscript><div class="noscript-note">Enable JavaScript to load the Spring 2026 event archive.</div></noscript>
+  </body>
+</html>

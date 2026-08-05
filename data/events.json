@@ -1,0 +1,92 @@
+[
+  {
+    "title": "LinkedIn Reviews with TIAA",
+    "date": "FEB 11",
+    "type": "Career night",
+    "description": "TIAA representatives reviewed student profiles and explained what recruiters actually notice.",
+    "location": "Woodward 335 · 6:30 PM",
+    "image": "assets/images/event-live-workshop.jpg",
+    "imageAlt": "Students attending a live HAVK workshop"
+  },
+  {
+    "title": "Intern for a Day: TIAA",
+    "date": "FEB 26",
+    "type": "Company visit",
+    "description": "Four hours inside TIAA to meet professionals, explore career paths, and see the day-to-day up close.",
+    "location": "TIAA · 9:30 AM–1:30 PM",
+    "image": "assets/images/community-lobby.jpg",
+    "imageAlt": "HAVK students gathered in a campus lobby"
+  },
+  {
+    "title": "Employability Night",
+    "date": "MAR 04",
+    "type": "Competition",
+    "description": "Fast behavioral mock interviews with direct feedback on confidence, communication, and resume stories.",
+    "location": "Woodward 335 · 6:30 PM",
+    "image": "assets/images/event-certificate.jpg",
+    "imageAlt": "A HAVK member holding an event certificate"
+  },
+  {
+    "title": "Reverse Engineering",
+    "date": "MAR 18",
+    "type": "Technical competition",
+    "description": "A beginner-friendly hour of working backwards through a program to figure out how it really works.",
+    "location": "Woodward 335 · 6:30 PM",
+    "image": "assets/posters/reverse-engineering.jpg",
+    "imageAlt": "Reverse Engineering event poster"
+  },
+  {
+    "title": "Internship Apocalypse",
+    "date": "MAR 25",
+    "type": "Career workshop",
+    "description": "Internship red flags, recruiter turnoffs, and practical ways to stop blending into the application pile.",
+    "location": "Woodward 335 · 6:30 PM",
+    "image": "assets/posters/internship-apocalypse.jpg",
+    "imageAlt": "Internship Apocalypse event poster"
+  },
+  {
+    "title": "Enterprise Computing with IBM",
+    "date": "MAR 27",
+    "type": "Industry talk",
+    "description": "IBM Z, backend systems, cybersecurity, data centers, infrastructure, and the tech behind huge companies.",
+    "location": "Woodward 106 · 2–5 PM",
+    "image": "assets/posters/ibm-enterprise.jpg",
+    "imageAlt": "Enterprise Computing with IBM event poster"
+  },
+  {
+    "title": "Niner Nation Gives",
+    "date": "APR 01–02",
+    "type": "Campus challenge",
+    "description": "HAVK finished first in CCI and eighth across the university during Niner Nation Gives.",
+    "location": "UNC Charlotte",
+    "image": "assets/images/event-group-awards.jpg",
+    "imageAlt": "HAVK members posing together with awards"
+  },
+  {
+    "title": "April Fools HAVK Sprint",
+    "date": "APR 08",
+    "type": "Build sprint",
+    "description": "Build something functional, absurd, unnecessary, or wildly overcomplicated—then let the room vote.",
+    "location": "Woodward 335 · 5:30–7:30 PM",
+    "image": "assets/images/event-presentation.jpg",
+    "imageAlt": "A student presenting during a HAVK event"
+  },
+  {
+    "title": "HAVK Tank",
+    "date": "APR 15",
+    "type": "Pitch night",
+    "description": "Students pitched a skill, project, or idea in 30–60 seconds and practiced making people care quickly.",
+    "location": "Woodward 335 · 5:30 PM",
+    "image": "assets/images/workshop-talk.jpg",
+    "imageAlt": "A HAVK member speaking during a workshop"
+  },
+  {
+    "title": "AWS: Start Publishing in Tech",
+    "date": "APR 22",
+    "type": "Technical writing",
+    "description": "An AWS Builder session on turning projects, research, and new ideas into technical work worth publishing.",
+    "location": "Woodward 335 · 5:30 PM",
+    "image": "assets/images/event-lecture.jpg",
+    "imageAlt": "A technical lecture at a HAVK event"
+  }
+]

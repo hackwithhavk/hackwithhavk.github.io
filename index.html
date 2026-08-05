@@ -13,8 +13,8 @@
     <meta property="og:type" content="website" />
     <title>HAVK — UNC Charlotte</title>
     <link rel="icon" type="image/png" href="assets/images/havk-mark.png" />
-    <link rel="stylesheet" href="styles.css?v=20260805as" />
-    <script defer src="script.js?v=20260805as"></script>
+    <link rel="stylesheet" href="styles.css?v=20260805aw" />
+    <script defer src="script.js?v=20260805aw"></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -170,35 +170,13 @@
       <section class="programs section-dark" id="programs">
         <div class="shell">
           <div class="programs__top reveal">
-            <h2>Companies we’ve collaborated / worked with</h2>
+            <h2>Programs</h2>
           </div>
-          <div class="company-wall">
-            <figure class="company-logo reveal">
-              <img src="assets/logos/ibm.svg" alt="IBM" loading="lazy" />
-            </figure>
-            <figure class="company-logo reveal reveal--delay">
-              <img src="assets/logos/tiaa.svg" alt="TIAA" loading="lazy" />
-            </figure>
-            <figure class="company-logo reveal">
-              <img src="assets/logos/principal-financial.svg" alt="Principal Financial Group" loading="lazy" />
-            </figure>
-            <figure class="company-logo reveal reveal--delay">
-              <img src="assets/logos/aws.svg" alt="Amazon Web Services" loading="lazy" />
-            </figure>
+          <div class="collaborators reveal">
+            <p>Collaborators + companies we’ve worked with</p>
+            <div class="collaborator-strip" id="collaborator-list" aria-live="polite"></div>
           </div>
-        </div>
-      </section>
-
-      <section class="intern section-lime" id="intern-for-a-day">
-        <div class="shell intern__grid">
-          <div class="intern__image reveal">
-            <img src="assets/images/community-lobby.jpg" alt="HAVK members gathered together in a campus lobby" loading="lazy" />
-          </div>
-          <div class="intern__copy reveal reveal--delay">
-            <h2>Intern for a Day</h2>
-            <p>Two company visits each semester.</p>
-            <a class="button button--ink discord-link" href="https://discord.gg/rPMw3u7mkj" target="_blank" rel="noreferrer">Discord <span aria-hidden="true">↗</span></a>
-          </div>
+          <div class="program-board" id="program-list" aria-live="polite"></div>
         </div>
       </section>
 
@@ -209,7 +187,18 @@
               <h2>Events</h2>
             </div>
           </div>
-          <div class="event-scroller reveal" id="event-list" aria-live="polite"></div>
+          <a class="archive-teaser reveal" href="events.html">
+            <div class="archive-teaser__images" aria-hidden="true">
+              <img src="assets/images/event-group-awards.jpg" alt="" loading="lazy" />
+              <img src="assets/posters/reverse-engineering.jpg" alt="" loading="lazy" />
+              <img src="assets/images/workshop-talk.jpg" alt="" loading="lazy" />
+            </div>
+            <div class="archive-teaser__copy">
+              <span>10 events · one semester</span>
+              <h3>Spring 2026 Archive</h3>
+              <strong>View here <span aria-hidden="true">↗</span></strong>
+            </div>
+          </a>
         </div>
       </section>
 
