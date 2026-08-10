@@ -39,6 +39,8 @@ button { color: inherit; font: inherit; }
 .brand__mark { width: 33px; height: 29px; object-fit: contain; }
 .brand__wordmark { font: 400 1.35rem/1 var(--display); letter-spacing: .13em; }
 .brand__school { margin-left: 3px; padding-left: 12px; border-left: 1px solid var(--line-dark); color: rgba(242, 240, 232, .65); font-size: .67rem; letter-spacing: .14em; text-transform: uppercase; }
+.brand--university { min-width: 220px; padding: 12px 0; }
+.brand__university-logo { width: 210px; height: auto; object-fit: contain; }
 .site-nav { display: flex; align-items: center; gap: 31px; font-family: var(--display); font-size: 1.18rem; font-weight: 400; letter-spacing: .055em; text-transform: uppercase; }
 .site-nav a { position: relative; color: var(--ink); transition: transform .2s ease, background .2s ease; }
 .site-nav a:not(.nav-cta) { isolation: isolate; overflow: visible; padding: 9px 14px 8px; border: 3px solid var(--ink); border-radius: 12px 4px 11px 5px; background: #fff; box-shadow: 4px 5px 0 var(--green); }
@@ -405,6 +407,9 @@ h1 span, h1 em, h2 em { color: var(--lime); font-style: normal; }
 .team-card--open h3 { max-width: 300px; color: var(--paper); }
 .team-card--open p { max-width: 330px; margin: 0; color: rgba(242, 240, 232, .67); font-size: .8rem; }
 .team-card--open a { align-self: start; margin-top: 20px; color: var(--lime); }
+.team-heading__soon { display: flex; align-items: center; gap: 18px; margin: 0 8px 8px 0; padding: 15px 23px 13px; border: 4px solid var(--ink); color: var(--ink); background: #fff25a; box-shadow: 7px 8px 0 #31dce9, 11px 12px 0 #ff3f9e; transform: rotate(-1.5deg); }
+.team-heading__soon span { font: 400 .75rem/1 var(--comic); }
+.team-heading__soon strong { font: 400 2.4rem/.8 var(--display); letter-spacing: .035em; }
 
 .partners { padding: 122px 0 130px; }
 .partners__grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(320px, .75fr); align-items: center; gap: 9vw; }
@@ -444,6 +449,8 @@ h1 span, h1 em, h2 em { color: var(--lime); font-style: normal; }
   :root { --shell: min(100% - 42px, 680px); }
   .nav-wrap { min-height: 76px; }
   .brand { min-width: auto; }
+  .brand--university { min-width: 190px; }
+  .brand__university-logo { width: 188px; }
   .brand__school { display: none; }
   .menu-toggle { display: block; }
   .site-nav { position: absolute; top: 76px; right: 0; left: 0; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: 9px 21px 21px; border-bottom: 1px solid var(--line-dark); background: rgba(10, 13, 11, .97); }
@@ -488,6 +495,7 @@ h1 span, h1 em, h2 em { color: var(--lime); font-style: normal; }
   .program-row--with-photos .program-row__photos { grid-column: 1 / -1; width: 100%; height: 145px; }
   .section-heading--split, .team__heading { display: block; margin-bottom: 50px; }
   .section-heading--split > p, .team__heading > p { max-width: 450px; margin-top: 27px; }
+  .team-heading__soon { display: inline-flex; margin-top: 30px; }
   .archive-picker { gap: 20px; }
   .archive-teaser { min-height: 390px; }
   .archive-teaser__images, .archive-teaser__images img { height: 175px; }
@@ -643,6 +651,10 @@ h1 span, h1 em, h2 em { color: var(--lime); font-style: normal; }
   .team-card h3 { font-size: 1.35rem; }
   .team-card__bio { font-size: .72rem; }
   .team-card--open { min-height: 175px; }
+  .brand--university { min-width: 158px; }
+  .brand__university-logo { width: 158px; }
+  .team-heading__soon { align-items: flex-start; flex-direction: column; gap: 9px; padding: 14px 18px 13px; }
+  .team-heading__soon strong { font-size: 2rem; }
   .partners { padding: 79px 0 87px; }
   .partner-card { padding: 25px 21px 22px; }
   .partner-card__quote { margin-bottom: 36px; font-size: 1.55rem; }
