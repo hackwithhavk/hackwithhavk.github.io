@@ -14,22 +14,7 @@
     { "value": "Biweekly", "label": "Competitions, workshops, and practice" },
     { "value": "0", "label": "Experience required to join" }
   ],
-  "team": [
-    {
-      "name": "Summer Malik",
-      "role": "President",
-      "initials": "SM",
-      "bio": "Building HAVK's programs, partnerships, and student community.",
-      "groups": []
-    },
-    {
-      "name": "Ema",
-      "role": "UI/UX Design & Marketing",
-      "initials": "E",
-      "bio": "Shaping HAVK's brand, web experience, and creative direction.",
-      "groups": []
-    }
-  ],
+  "team": [],
   "gallery": [
     {
       "image": "assets/images/community-lobby.jpg",
